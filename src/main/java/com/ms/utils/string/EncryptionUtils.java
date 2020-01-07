@@ -3,7 +3,7 @@ package com.ms.utils.string;
 /**
  * @author maohuawei created in 2018/10/8
  * <p>
- * 字符串加密 解密
+
  */
 public class EncryptionUtils {
 
@@ -18,15 +18,12 @@ public class EncryptionUtils {
             return null;
         }
         byte[] src_byts = src.getBytes();
-        //自定义加密
         CustomEncrpyUtil.encodeBytes(src_byts);
-        //base64加密
         return Base64.encodeFetchString(src_byts);
     }
 
 
     /**
-     * 解码
      *
      * @param e64Str
      * @return
@@ -36,9 +33,7 @@ public class EncryptionUtils {
             return null;
         }
         byte[] e64Bytes = Base64.decode(e64Str);
-        //自定义解密
         CustomEncrpyUtil.decodeBytes(e64Bytes);
-        //转为字符串
         String desrc = new String(e64Bytes);
         return desrc;
     }
@@ -46,7 +41,6 @@ public class EncryptionUtils {
     private static class Base64 {
 
         /**
-         * 编码表
          */
         private static final byte[] ENCODINGTABLE = {
                 (byte) 'A', (byte) 'B', (byte) 'C', (byte) 'D', (byte) 'E',
