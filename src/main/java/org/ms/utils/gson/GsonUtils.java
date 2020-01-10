@@ -1,4 +1,4 @@
-package com.ms.utils.gson;
+package org.ms.utils.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;

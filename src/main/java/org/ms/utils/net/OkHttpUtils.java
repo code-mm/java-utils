@@ -1,4 +1,4 @@
-package com.ms.utils.net;
+package org.ms.utils.net;
 
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;

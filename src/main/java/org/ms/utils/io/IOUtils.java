@@ -1,4 +1,4 @@
-package com.ms.utils.io;
+package org.ms.utils.io;
 
 import java.io.Closeable;
 import java.io.IOException;

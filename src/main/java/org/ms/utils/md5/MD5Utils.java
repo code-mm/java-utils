@@ -1,4 +1,4 @@
-package com.ms.utils.md5;
+package org.ms.utils.md5;
 
 import java.security.MessageDigest;
 

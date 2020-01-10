@@ -1,4 +1,4 @@
-package com.ms.utils.file;
+package org.ms.utils.file;
 
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;

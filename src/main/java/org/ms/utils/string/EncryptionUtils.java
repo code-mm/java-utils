@@ -1,4 +1,4 @@
-package com.ms.utils.string;
+package org.ms.utils.string;
 
 /**
  * @author maohuawei created in 2018/10/8
