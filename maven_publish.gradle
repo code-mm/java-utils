@@ -1,0 +1,22 @@
+apply plugin: "maven-publish"
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                url "https://msdev-maven.pkg.coding.net/repository/ms/maven/"
+                credentials {
+                    username "maven-1635343276723"
+                    password "2c5857ef169c73260bffb2218d41b685ff5c507b"
+                }
+            }
+        }
+        publications {
+            release(MavenPublication) {
+                from components.java
+                groupId "com.ms"
+                artifactId = "java-utils"
+                version = "1.0.0"
+            }
+        }
+    }
+}

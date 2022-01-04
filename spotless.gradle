@@ -1,0 +1,15 @@
+apply plugin: "com.diffplug.spotless"
+spotless {
+    java {
+        licenseHeader rootProject.file('extra/spotless/mit-license.java').text
+        removeUnusedImports()
+        importOrder rootProject.file('extra/eclipse/eclipse.importorder').text
+        eclipse().configFile rootProject.file('extra/eclipse/eclipse-formatter.xml')
+    }
+    format('misc') {
+        target('**/*.gradle', '**/*.md', '**/*.yml')
+        targetExclude('**/build/**/*.*')
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
+}
